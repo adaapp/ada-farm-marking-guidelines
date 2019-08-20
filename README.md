@@ -4,7 +4,7 @@ Thanks for helping out on the marking for the Advanced Programming Assignment. T
 
 ## 1. Familiarise yourself with the coursework
 
-Please start by [reading the assignment](./SD4 Advanced Programming Assignment.docx) 
+Please start by [reading the assignment](SD4AdvancedProgrammingAssignment.docx) 
 
 ## 2. View the marksheet samples
 
