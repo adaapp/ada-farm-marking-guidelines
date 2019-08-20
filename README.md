@@ -20,9 +20,7 @@ N.B. The quality criteria have changed since Cohort 3 completed the coursework.
 
 These are all encoded in Airtable. There are four quality options for each section, with a description that will be given to a student in their marksheet. When assigning a mark to a section, work out which broad quality category their work fits into. Give zero marks if they've not attempted the section.
 
-Airtable will take your mark, divide it by the number of marks available for that section, and multiply it by four (and add one) to arrive at the quality level.
-
-It is your job to ensure the quality level matches their work.
+Airtable will take the ceiling (i.e. rounded up to the nearest integer) of your mark, divide it by the number of marks available for that section, and multiply it by four to arrive at the quality level.
 
 ### Section 1: Essay and UML (if you are just marking Ada Farm, please ignore this section)
 
@@ -114,19 +112,63 @@ Apprentices are allowed to collaborate with their peers, as long as they don't s
 
 ## 3. Run a git diff to see all their changes
 
-There will be lots of code to sift through. The easiest way to see all their changes is to run the following command to generate a diff of their work:
+There will be lots of code to sift through. The easiest way to see all their changes is to run the following command to generate a diff of their work, where XXX is the unique identifier from the Airtable record:
 
 ```
-$ git diff 06dd96d4352de17aed222e78e45e71966ae64351 ':(exclude)package-lock.json' ':(exclude)client/package-lock.json' ':(exclude)yarn.lock' ':(exclude)node_modules/*' ':(exclude)client/package.json' ':(exclude)client/public/img/*' ':(exclude)package.json' ':(exclude)client/src/video/*'  ':(exclude)semantic/*'> diff.md
+$ git diff 06dd96d4352de17aed222e78e45e71966ae64351 ':(exclude)package-lock.json' ':(exclude)client/package-lock.json' ':(exclude)yarn.lock' ':(exclude)node_modules/*' ':(exclude)client/package.json' ':(exclude)client/public/img/*' ':(exclude)package.json' ':(exclude)client/src/video/*'  ':(exclude)semantic/*'> XXX-diff.md
 ```
 
 That commit hash is Ali's last commit hash and represents the state of the project when the apprentice accepted the assignment. You can format this `diff.md` file in your editor as Diff to make it easier to read.
 
-Make a note of all the technical concepts they hit
+Make a note of all the technical concepts they hit. The list is below. In previous marking, Ali would make a copy of this list and check each item off once he'd found evidence of it in the code. The timesheet should tell you which ones you are looking for (if apprentices write good timesheets this will make your life easier), but make sure you verfiy timesheet claims with code in the diff.
+
+Many of these technical requirements can be met with only a few lines of code. 
+
+A) Full-stack development:
+* DOM manipulation
+* Hand-written CSS to style the Dashboard
+* A CSS framework to style the Dashboard
+* Refactoring the provided code base
+* New tools, frameworks or approaches rather than using the given code base
+* Continuous integration / continuous deployment
+
+B) Test-driven development
+* Unit testing
+* Integration testing
+
+C) Programming paradigms
+* Object-oriented programming concepts including:
+  * Inheritance
+  * Polymorphism
+  * Abstraction
+  * Interfaces
+* Functional programming concepts e.g. map, reduce
+* Functional programming techniques in the context of a JS framework e.g.
+React Hooks
+
+D) Advanced JavaScript features
+* Higher order components
+* Closures
+* Async/await or Promises
+* Types using TypeScript
+* Advanced TypeScript features such as enums
+* Animating objects in P5
+* Manipulation of complex data structures
+* Event handling
+* Routing
+
+E) 3rd Party API Integration
+* localStorage to persist state between sessions
+* a database to persist data between devices
+* an authentication service such as Auth0 or Firebase Auth
+* the Open Weather API
+* any other API
 
 ## 4. Assign marks for each section
 
-Enter these directly into the Airtable form. As ever, follow the guidelines in the Apprenticeship Lecturing Handbook. All you'll have is a GitHub username, but do watch out for conscious and unconscious bias. Your marks will be moderated to ensure consistency across all the work.
+Enter these directly into the Airtable form. As ever, follow the guidelines in the Apprenticeship Lecturing Handbook. All you'll have is a GitHub username, but do watch out for conscious and unconscious bias and favouritism. Your marks will be moderated blindly to ensure consistency across all the work.
+
+Please return a folder of labelled diffs once you have completed your marking for the moderator to review. 
 
 Thank you and have fun!
 
