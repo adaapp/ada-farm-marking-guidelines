@@ -53,7 +53,7 @@ Airtable will take the ceiling (i.e. rounded up to the nearest integer) of your 
 * Quality 1: Very poor quality suggests a very low programming ability.
 * Quality 2: Style suggests a lack of confidence with programming, or a lack of effort on this assignment.
 * Quality 3: A good, confident approach is evidence of a good command of programming.
-* Quality 4: Excellent approach in a confident style. Faultless.
+* Quality 4: Excellent approach in a confident style. 
 
 2. Refactor (5 marks)
 
@@ -73,24 +73,24 @@ Airtable will take the ceiling (i.e. rounded up to the nearest integer) of your 
 
 1. Farm pass criteria (20 marks)
 
-* Quality 1: Only one of animals, crops or the market implemented, and no further technical concepts found. 
-* Quality 2: Only two of animals, crops or the market implemented, and too few technical concepts found.
-* Quality 3: Only basic extension of animals, crops and the market, and not enough technical concepts found.
-* Quality 4: All of animals, crops and the market implemented to an acceptable standard, with at least four of the technical concepts found.
+* Quality 1: Only one of the standard requirements (animals, crops, and the market) implemented, and no further technical concepts found. 
+* Quality 2:  Only one of the standard requirements (animals, crops, and the market) implemented, and one or more technical concepts found.
+* Quality 3:  Only two of the standard requirements (animals, crops, and the market) implemented, and fewer than four technical concepts found.
+* Quality 4: All of the standard requirements (animals, crops, and the market) implemented to an acceptable standard, with at least four of the technical concepts found to a good standard.
 
 2. Farm merit criteria (15 marks)
 
 * Quality 1: One or more further specific requirements implemented to an acceptable standard, or two or more to a good standard, and one or two further technical concepts found.
 * Quality 2: One or more further specific requirements implemented to a good standard, and two or three further technical concepts found.
-* Quality 3: One or more further specific requirements implemented to a good standard, and three or more further technical concepts implemented to a good standard
+* Quality 3: One or more further specific requirements implemented to a good standard, and three or more further technical concepts found to a good standard
 * Quality 4: Two or more further specific requirements implemented to a good standard, or one or more to an excellent standard, and three or more further technical concepts found to an excellent standard
 
 3. Farm distinction criteria (15 marks) 
 
-* Quality 1: At least one further technical concept hit to an acceptable standard.
-* Quality 2: At least one further technical concept hit to a good standard, or two to an acceptable standard.
-* Quality 3: At least three further technical concepts hit to an acceptable standard, or four to a good standard, or two to an excellent standard
-* Quality 4: At least four further technical concepts hit to an excellent standard.
+* Quality 1: At least one further technical concept found to an acceptable standard.
+* Quality 2: At least one further technical concept found to a good standard, or two to an acceptable standard.
+* Quality 3: At least three further technical concepts found to an acceptable standard, or four to a good standard, or two to an excellent standard
+* Quality 4: At least four further technical concepts found to an excellent standard.
 
 ## 1. Clone down the repository and view their game
 
@@ -104,7 +104,7 @@ If you're unlucky, you'll have to run `$ npm install` and `$ npm start` to get t
 
 Make a note of all the specific requirements (features) they hit.
 
-## 2. Read their own reflection on their work
+## 2. Read their own documentation of their work
 
 Reading their timesheet will give you an indication of which of the criteria they went for. This will help you identify where to give marks. Run a `$ git log` on their repo to view their commit history. Is it legible and easy-to-follow? N.B. There are five marks available for their time sheet and git commits. 
 
@@ -115,12 +115,14 @@ Apprentices are allowed to collaborate with their peers, as long as they don't s
 There will be lots of code to sift through. The easiest way to see all their changes is to run the following command to generate a diff of their work, where XXX is the unique identifier from the Airtable record:
 
 ```
-$ git diff 06dd96d4352de17aed222e78e45e71966ae64351 ':(exclude)package-lock.json' ':(exclude)client/package-lock.json' ':(exclude)yarn.lock' ':(exclude)node_modules/*' ':(exclude)client/package.json' ':(exclude)client/public/img/*' ':(exclude)package.json' ':(exclude)client/src/video/*'  ':(exclude)semantic/*'> XXX-diff.md
+$ git diff 06dd96d4352de17aed222e78e45e71966ae64351 ':(exclude)package-lock.json' ':(exclude)client/package-lock.json' ':(exclude)yarn.lock' ':(exclude)node_modules/*' ':(exclude)client/package.json' ':(exclude)client/public/img/*' ':(exclude)package.json' ':(exclude)client/src/video/*'  ':(exclude)semantic/*'> ../diffs/XXX-diff.md
 ```
 
 That commit hash is Ali's last commit hash and represents the state of the project when the apprentice accepted the assignment. You can format this `diff.md` file in your editor as Diff to make it easier to read.
 
-Make a note of all the technical concepts they hit. The list is below. In previous marking, Ali would make a copy of this list and check each item off once he'd found evidence of it in the code. The timesheet should tell you which ones you are looking for (if apprentices write good timesheets this will make your life easier), but make sure you verfiy timesheet claims with code in the diff.
+You may need to add further paths for it to exclude.
+
+Make a note of all the technical concepts they hit. The list is below. In previous marking, Ali would make a copy of this list and check each item off once he'd found evidence of it in the code. The timesheet should tell you which ones you are looking for (if apprentices write good timesheets this will make your life easier), but make sure you verfiy timesheet claims with working code in the diff.
 
 Many of these technical requirements can be met with only a few lines of code. 
 
@@ -166,9 +168,13 @@ E) 3rd Party API Integration
 
 ## 4. Assign marks for each section
 
-Enter these directly into the Airtable form. As ever, follow the guidelines in the Apprenticeship Lecturing Handbook. All you'll have is a GitHub username, but do watch out for conscious and unconscious bias and favouritism. Your marks will be moderated blindly to ensure consistency across all the work.
+Enter these directly into the Airtable form.  All you'll have is a GitHub username, but do watch out for conscious and unconscious bias and favouritism. Your marks will be moderated blindly to ensure consistency across all the work.
 
-Please return a folder of labelled diffs once you have completed your marking for the moderator to review. 
+Please return a folder of labelled diffs (with the unique identifier, as above) once you have completed your marking for the moderator to review. 
+
+## 5. Write some personalised comments
+
+It'll only take a moment or two longer to write a couple of constructive comments, and will add enormous value for the apprentice to receive your feedback. How could they have improved their work? What did they do well? What did you enjoy or what might you have done differently? Are they making the same mistake consistently? They've put in an enormous amount of work to this project. Take a moment to give them back something useful.
 
 Thank you and have fun!
 
