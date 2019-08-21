@@ -24,14 +24,14 @@ Airtable will take the ceiling (i.e. rounded up to the nearest integer) of your 
 
 ### Section 1: Essay and UML (if you are just marking Ada Farm, please ignore this section)
 
-1. Programming Approaches (10 marks)
+1. Programming Approaches (5 marks)
 
 * Quality 1: Incorrect reference to imperative or declarative programming paradigms. Code indicated as declarative is actually imperative, or vice versa.
 * Quality 2: Definitions of an acceptable quality. Code correctly indicates different approaches but is formatted badly.
 * Quality 3: Good definitions of imperative and declarative approaches with a good comparative analysis and good code examples.
 * Quality 4: Excellent definitions of imperative and declarative approaches with excellent comparative analysis and code examples.
 
-2. Programming Paradigms (10 marks)
+2. Programming Paradigms (15 marks)
 
 * Quality 1: Incorrect or muddled definitions. Missing examples of systems suited to each paradigm.
 * Quality 2: Acceptable definitions but examples are inappropriate.
